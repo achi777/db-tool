@@ -1,0 +1,78 @@
+# electron-builder configuration for the DB Tool desktop app.
+# Produces an unsigned Windows NSIS installer + a portable single .exe.
+# End users need NO Node.js — the Electron runtime is bundled.
+appId: com.dbtool.app
+productName: DB Tool
+publish: null
+copyright: Copyright © 2026 DB Tool
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - out/**
+  - package.json
+
+npmRebuild: true
+nodeGypRebuild: false
+
+asar: true
+asarUnpack:
+  - "**/*.node"
+  - "node_modules/better-sqlite3/**"
+
+mac:
+  icon: build/icon.png
+  artifactName: DBTool-${version}-${arch}-mac.${ext}
+  identity: "ALL PAY WAY, LLC (2UUD29Z4Q3)"
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+  notarize:
+    teamId: "2UUD29Z4Q3"
+  target:
+    - target: dmg
+      arch:
+        - arm64
+        - x64
+    - target: zip
+      arch:
+        - arm64
+        - x64
+
+linux:
+  icon: build/icon.png
+  artifactName: DBTool-${version}-${arch}-linux.${ext}
+  category: Development
+  target:
+    - target: AppImage
+      arch:
+        - x64
+
+win:
+  icon: build/icon.ico
+  artifactName: DBTool-${version}-${arch}-win.${ext}
+  signAndEditExecutable: true
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: DB Tool
+  # Friendly installer file name: DBTool-Setup-<version>.exe
+  artifactName: DBTool-Setup-${version}.exe
+
+portable:
+  # Friendly portable file name: DBTool-<version>-portable.exe
+  artifactName: DBTool-${version}-portable.exe

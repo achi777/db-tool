@@ -1,0 +1,89 @@
+{
+  "name": "db-tool",
+  "version": "0.3.0",
+  "description": "DBTool — a Navicat-style desktop database client for PostgreSQL, MySQL, MariaDB, SQLite, Oracle and SQL Server (Electron + React + TypeScript)",
+  "main": "./out/main/index.js",
+  "author": {
+    "name": "ALL PAY WAY, LLC",
+    "email": "ceo@apw.ge"
+  },
+  "homepage": "https://github.com/achi777/db-tool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/achi777/db-tool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/achi777/db-tool/issues"
+  },
+  "keywords": [
+    "database",
+    "sql",
+    "sql-client",
+    "electron",
+    "postgresql",
+    "mysql",
+    "mariadb",
+    "sqlite",
+    "oracle",
+    "sqlserver"
+  ],
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "start": "electron-vite preview",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json",
+    "typecheck:web": "tsc --noEmit -p tsconfig.web.json",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web",
+    "rebuild": "electron-rebuild -f -w better-sqlite3",
+    "package": "electron-vite build && electron-builder --win",
+    "package:dir": "electron-vite build && electron-builder --win --dir",
+    "package:mac": "electron-vite build && electron-builder --mac",
+    "package:mac:dir": "electron-vite build && electron-builder --mac --dir",
+    "package:linux": "electron-vite build && electron-builder --linux",
+    "package:linux:dir": "electron-vite build && electron-builder --linux --dir"
+  },
+  "dependencies": {
+    "@dagrejs/dagre": "^3.0.0",
+    "better-sqlite3": "^11.8.1",
+    "html-to-image": "^1.11.13",
+    "lucide-react": "^1.25.0",
+    "mssql": "^12.7.0",
+    "mysql2": "^3.11.5",
+    "node-sql-parser": "^5.4.0",
+    "oracledb": "^7.0.1",
+    "papaparse": "^5.5.4",
+    "pg": "^8.13.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@codemirror/lang-sql": "^6.8.0",
+    "@electron/rebuild": "^3.7.1",
+    "@glideapps/glide-data-grid": "^6.0.3",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/mssql": "^12.3.0",
+    "@types/node": "^22.10.5",
+    "@types/oracledb": "^7.0.1",
+    "@types/papaparse": "^5.5.2",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@uiw/react-codemirror": "^4.23.7",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@xyflow/react": "^12.11.2",
+    "electron": "^33.3.1",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "lodash": "^4.17.21",
+    "marked": "^4.0.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-responsive-carousel": "^3.2.23",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.11",
+    "zustand": "^5.0.3"
+  }
+}

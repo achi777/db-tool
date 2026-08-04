@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Lock the renderer down: no remote content, inline styles allowed for
+         glide-data-grid / CodeMirror which inject styles at runtime. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; script-src 'self'"
+    />
+    <title>DB Tool</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- glide-data-grid renders its cell-edit overlay into this portal; it MUST
+         be the last child of <body> or inline editing can't open. -->
+    <div id="portal" style="position: fixed; left: 0; top: 0; z-index: 9999"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

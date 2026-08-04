@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Portable Node runtime (project-local; not committed)
+.node/
+
+# Build output
+out/
+dist/
+
+# Packaging output (electron-builder) and exe artifacts
+release/
+*.exe
+
+# Native module build outputs (rebuilt/prebuilt per Electron ABI)
+node_modules/**/build/Release/*.node
+
+# Smoke-test scratch database
+.smoke/
+
+# Local env
+.env
+.env.local
+
+# Logs
+*.log
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# Editor / OS cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local agent/assistant config
+.claude/
