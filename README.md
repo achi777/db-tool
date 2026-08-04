@@ -24,6 +24,7 @@ Connect, browse, query and edit **PostgreSQL · MySQL · MariaDB · SQLite · Or
 - [Features](#-features)
 - [Screenshots](#-screenshots)
 - [Download](#-download)
+- [Changelog](CHANGELOG.md)
 - [Quick start](#-quick-start)
 - [Supported databases](#%EF%B8%8F-supported-databases)
 - [Building from source](#-building-from-source)
@@ -134,6 +135,8 @@ Pre-built binaries — **no Node.js or other prerequisites required**, the Elect
 > [`sqlTools-linux`](https://github.com/achi777/sqlTools-linux)). Development now happens
 > here, and **future releases will be published on
 > [this repository's releases page](https://github.com/achi777/db-tool/releases)**.
+
+Release history and what changed in each version: **[CHANGELOG.md](CHANGELOG.md)**.
 
 ---
 
