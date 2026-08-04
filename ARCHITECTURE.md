@@ -2,7 +2,7 @@
 
 ## Overview
 
-DB Tool is a cross-platform Electron desktop application — a Navicat-style GUI for six database engines: **PostgreSQL, MySQL, MariaDB, SQLite, Oracle, and Microsoft SQL Server**. The architecture enforces a strict process boundary: all database drivers, credentials, and native modules run in the Electron **main** process; the **renderer** is a sandboxed React SPA that communicates exclusively through a typed IPC bridge.
+DB Tool is a cross-platform Electron desktop application — a full-featured GUI for six database engines: **PostgreSQL, MySQL, MariaDB, SQLite, Oracle, and Microsoft SQL Server**. The architecture enforces a strict process boundary: all database drivers, credentials, and native modules run in the Electron **main** process; the **renderer** is a sandboxed React SPA that communicates exclusively through a typed IPC bridge.
 
 ```mermaid
 graph TB

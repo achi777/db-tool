@@ -1,7 +1,7 @@
 {
   "name": "db-tool",
   "version": "0.3.0",
-  "description": "DBTool — a Navicat-style desktop database client for PostgreSQL, MySQL, MariaDB, SQLite, Oracle and SQL Server (Electron + React + TypeScript)",
+  "description": "DBTool — a full-featured desktop database client for PostgreSQL, MySQL, MariaDB, SQLite, Oracle and SQL Server (Electron + React + TypeScript)",
   "main": "./out/main/index.js",
   "author": {
     "name": "ALL PAY WAY, LLC",

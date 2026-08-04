@@ -2,7 +2,7 @@
 
 # DBTool
 
-**A Navicat-style desktop database client — free, open source, and cross-platform.**
+**A full-featured desktop database client — free, open source, and cross-platform.**
 
 Connect, browse, query and edit **PostgreSQL · MySQL · MariaDB · SQLite · Oracle · SQL Server** through one UI.
 
@@ -46,6 +46,10 @@ locally, stores nothing in the cloud, and is fully open source under the AGPL.
 
 Everything runs on your machine: **no telemetry, no account, no cloud sync.** Connection
 passwords are encrypted at rest with your operating system's keychain.
+
+If you have used a commercial client such as Navicat, DataGrip or DBeaver, DBTool should
+feel familiar — the object tree, the query tabs, the editable grid and the filter builder
+all follow the conventions you already know.
 
 ---
 
