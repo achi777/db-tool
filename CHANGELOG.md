@@ -19,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Project moved to the repository root — it was previously nested under `db-tool/`.
 - `package.json` version aligned to `0.3.0` (it had lagged at `0.1.0`), and
   `repository`, `bugs` and `keywords` metadata added.
+- **Application icon replaced.** The generated placeholder is gone; `build/icon.png`
+  (1024×1024) and `build/icon.ico` (16 · 24 · 32 · 48 · 64 · 128 · 256) now carry a
+  properly rendered stacked-disk mark on a rounded-square gradient. `build/make_icon.py`
+  regenerates both (requires Pillow).
 
 ### Added
 
