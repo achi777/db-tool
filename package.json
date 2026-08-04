@@ -1,6 +1,6 @@
 {
   "name": "db-tool",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "DBTool — a full-featured desktop database client for PostgreSQL, MySQL, MariaDB, SQLite, Oracle and SQL Server (Electron + React + TypeScript)",
   "main": "./out/main/index.js",
   "author": {

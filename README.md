@@ -8,7 +8,7 @@ Connect, browse, query and edit **PostgreSQL · MySQL · MariaDB · SQLite · Or
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
 [![Commercial license available](https://img.shields.io/badge/Commercial-license%20available-green.svg)](COMMERCIAL-LICENSE.md)
-[![Version](https://img.shields.io/badge/version-0.3.0-orange.svg)](#-download)
+[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](#-download)
 [![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](#-download)
 [![Built with Electron](https://img.shields.io/badge/built%20with-Electron%20%2B%20React%20%2B%20TypeScript-47848F.svg)](#%EF%B8%8F-tech-stack)
 
@@ -128,17 +128,9 @@ Pre-built binaries — **no Node.js or other prerequisites required**, the Elect
 
 | Platform | Download | Notes |
 |---|---|---|
-| **Windows** (x64) | [Installer / portable →](https://github.com/achi777/sqlTools/releases/latest) | NSIS installer (per-user, no admin) or a single portable `.exe`. Builds are **unsigned** — SmartScreen may warn on first run: *More info → Run anyway* |
-| **macOS** (Apple Silicon & Intel) | [`.dmg` →](https://github.com/achi777/sqlTools-mac/releases/latest) | **Signed and notarized** — opens without a Gatekeeper warning |
-| **Linux** (x86_64) | [AppImage →](https://github.com/achi777/sqlTools-linux/releases/latest) | `chmod +x DBTool-*.AppImage && ./DBTool-*.AppImage` |
-
-> **Note on the download links.** The current binaries are still hosted in the three
-> per-platform repositories this project was split across before
-> ([`sqlTools`](https://github.com/achi777/sqlTools),
-> [`sqlTools-mac`](https://github.com/achi777/sqlTools-mac),
-> [`sqlTools-linux`](https://github.com/achi777/sqlTools-linux)). Development now happens
-> here, and **future releases will be published on
-> [this repository's releases page](https://github.com/achi777/db-tool/releases)**.
+| **Windows** (x64) | [Installer / portable →](https://github.com/achi777/db-tool/releases/latest) | NSIS installer (per-user, no admin) or a single portable `.exe`. Builds are **unsigned** — SmartScreen may warn on first run: *More info → Run anyway* |
+| **macOS** (Apple Silicon & Intel) | [`.dmg` →](https://github.com/achi777/db-tool/releases/latest) | **Signed and notarized** — opens without a Gatekeeper warning |
+| **Linux** (x86_64) | [AppImage →](https://github.com/achi777/db-tool/releases/latest) | `chmod +x DBTool-*.AppImage && ./DBTool-*.AppImage` |
 
 Release history and what changed in each version: **[CHANGELOG.md](CHANGELOG.md)**.
 

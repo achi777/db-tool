@@ -36,6 +36,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.0] — 2026-08-05
+
+### Changed
+
+- Consolidated the three per-platform repositories into a single cross-platform repository
+- Releases for Windows, macOS and Linux are now built and published from one tag
+
+---
+
 ## [0.3.0] — 2026-07-23
 
 **First public release.** Binaries for all three platforms are published on the

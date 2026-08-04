@@ -1,0 +1,83 @@
+name: Bug report
+description: Something in DBTool does not work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a report.
+
+        **Security issues do not belong here.** If you have found a vulnerability, follow
+        the private disclosure process in [SECURITY.md](../blob/main/SECURITY.md) instead.
+
+  - type: input
+    id: version
+    attributes:
+      label: DBTool version
+      description: Shown in Help → About, or the release you downloaded.
+      placeholder: "1.0.0 (installer)"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system and version
+      placeholder: "Windows 11 24H2 / macOS 15.3 arm64 / Ubuntu 24.04"
+    validations:
+      required: true
+
+  - type: input
+    id: engine
+    attributes:
+      label: Database engine and version
+      placeholder: "PostgreSQL 16.2 / SQL Server 2022 / Oracle 19c Thin"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: What you were doing
+      description: Numbered steps to reproduce, starting from a fresh launch.
+      placeholder: |
+        1. Connect to ...
+        2. Open the table ...
+        3. Click ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+      description: Include the error text verbatim, and a screenshot if it is a UI issue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Any relevant log output. This is automatically formatted as code.
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: redaction
+    attributes:
+      label: Before you submit
+      description: >-
+        Do not paste real connection details, hostnames, credentials or production data
+        into this issue. Redact them, or reproduce against a throwaway database.
+      options:
+        - label: I have checked that this report contains no real credentials, connection strings or production data.
+          required: true
