@@ -8,7 +8,7 @@ Connect, browse, query and edit **PostgreSQL · MySQL · MariaDB · SQLite · Or
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
 [![Commercial license available](https://img.shields.io/badge/Commercial-license%20available-green.svg)](COMMERCIAL-LICENSE.md)
-[![Latest release](https://img.shields.io/github/v/release/achi777/db-tool?label=release)](https://github.com/achi777/db-tool/releases/latest)
+[![Version](https://img.shields.io/badge/version-0.3.0-orange.svg)](#-download)
 [![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](#-download)
 [![Built with Electron](https://img.shields.io/badge/built%20with-Electron%20%2B%20React%20%2B%20TypeScript-47848F.svg)](#%EF%B8%8F-tech-stack)
 
@@ -121,13 +121,19 @@ pick join types, and watch the `SELECT` build itself. Preview the results or sav
 
 Pre-built binaries — **no Node.js or other prerequisites required**, the Electron runtime is bundled.
 
-| Platform | File | Notes |
+| Platform | Download | Notes |
 |---|---|---|
-| **Windows** (x64) | `DBTool-Setup-<version>.exe` or `DBTool-<version>-portable.exe` | NSIS installer (per-user, no admin) or a single portable `.exe`. Builds are **unsigned** — SmartScreen may warn on first run: *More info → Run anyway* |
-| **macOS** (Apple Silicon & Intel) | `DBTool-<version>-arm64-mac.dmg` / `-x64-mac.dmg` | **Signed and notarized** — opens without a Gatekeeper warning |
-| **Linux** (x86_64) | `DBTool-<version>-x86_64-linux.AppImage` | `chmod +x DBTool-*.AppImage && ./DBTool-*.AppImage` |
+| **Windows** (x64) | [Installer / portable →](https://github.com/achi777/sqlTools/releases/latest) | NSIS installer (per-user, no admin) or a single portable `.exe`. Builds are **unsigned** — SmartScreen may warn on first run: *More info → Run anyway* |
+| **macOS** (Apple Silicon & Intel) | [`.dmg` →](https://github.com/achi777/sqlTools-mac/releases/latest) | **Signed and notarized** — opens without a Gatekeeper warning |
+| **Linux** (x86_64) | [AppImage →](https://github.com/achi777/sqlTools-linux/releases/latest) | `chmod +x DBTool-*.AppImage && ./DBTool-*.AppImage` |
 
-**→ [Get the latest release](https://github.com/achi777/db-tool/releases/latest)**
+> **Note on the download links.** The current binaries are still hosted in the three
+> per-platform repositories this project was split across before
+> ([`sqlTools`](https://github.com/achi777/sqlTools),
+> [`sqlTools-mac`](https://github.com/achi777/sqlTools-mac),
+> [`sqlTools-linux`](https://github.com/achi777/sqlTools-linux)). Development now happens
+> here, and **future releases will be published on
+> [this repository's releases page](https://github.com/achi777/db-tool/releases)**.
 
 ---
 
