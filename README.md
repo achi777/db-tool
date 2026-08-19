@@ -138,6 +138,12 @@ Release history and what changed in each version: **[CHANGELOG.md](CHANGELOG.md)
 
 ---
 
+## 📖 Writing
+
+- **[Six database engines, one GUI: everything that quietly disagrees](docs/articles/six-database-engines-one-gui.md)** — the cross-engine divergences that cost the most time while building DBTool: identifier case folding, four incompatible ways to paginate, NULL sort order, routine editing, and why `information_schema` only gets you a third of the way.
+
+---
+
 ## 🚀 Quick start
 
 1. Launch DBTool.
