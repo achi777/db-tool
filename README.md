@@ -12,6 +12,8 @@ Connect, browse, query and edit **PostgreSQL · MySQL · MariaDB · SQLite · Or
 [![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](#-download)
 [![Built with Electron](https://img.shields.io/badge/built%20with-Electron%20%2B%20React%20%2B%20TypeScript-47848F.svg)](#%EF%B8%8F-tech-stack)
 
+**[Website & downloads → codemake.co/software](https://codemake.co/software)**
+
 ![DBTool main window — connection sidebar, object tree, SQL editor and paginated results grid](docs/images/screenshot-main-window.png)
 
 </div>
@@ -129,7 +131,7 @@ Pre-built binaries — **no Node.js or other prerequisites required**, the Elect
 | Platform | Download | Notes |
 |---|---|---|
 | **Windows** (x64) | [Installer / portable →](https://github.com/achi777/db-tool/releases/latest) | NSIS installer (per-user, no admin) or a single portable `.exe`. Builds are **unsigned** — SmartScreen may warn on first run: *More info → Run anyway* |
-| **macOS** (Apple Silicon & Intel) | [`.dmg` →](https://github.com/achi777/db-tool/releases/latest) | **Signed and notarized** — opens without a Gatekeeper warning |
+| **macOS** (Apple Silicon & Intel) | [`.dmg` →](https://github.com/achi777/db-tool/releases/latest) | Builds are **unsigned** — Gatekeeper blocks them on first launch. Open it once with **right-click → Open**, or run `xattr -dr com.apple.quarantine /Applications/DBTool.app` |
 | **Linux** (x86_64) | [AppImage →](https://github.com/achi777/db-tool/releases/latest) | `chmod +x DBTool-*.AppImage && ./DBTool-*.AppImage` |
 
 Release history and what changed in each version: **[CHANGELOG.md](CHANGELOG.md)**.
