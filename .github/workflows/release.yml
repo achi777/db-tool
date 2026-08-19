@@ -60,7 +60,13 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.os }}
-          path: release/*
+          path: |
+            release/*.exe
+            release/*.dmg
+            release/*.AppImage
+            release/*.zip
+            release/*.blockmap
+            release/*.yml
           if-no-files-found: error
 
   release:
@@ -76,8 +82,21 @@ jobs:
         with:
           path: dist
 
+      # The three platform artifacts arrive in separate directories. Flatten them
+      # into one folder so the release carries plain installer names, and publish a
+      # checksum file alongside them - the builds are unsigned, so SHA256SUMS.txt is
+      # the only way a user can verify what they downloaded.
+      - name: Collect installers and generate checksums
+        run: |
+          mkdir -p out
+          find dist -type f -exec mv -n {} out/ \;
+          cd out
+          sha256sum * > ../SHA256SUMS.txt
+          mv ../SHA256SUMS.txt .
+          ls -lh
+
       - uses: softprops/action-gh-release@v2
         with:
-          files: dist/**/*
+          files: out/*
           draft: true
           generate_release_notes: true
